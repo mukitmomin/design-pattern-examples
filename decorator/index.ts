@@ -42,7 +42,7 @@ const encryptionDataSource = new EncryptionDecorator(basicDataSource)
 const clientWithEncryption = new ClientApp(encryptionDataSource)
 clientWithEncryption.write(dataForClient)
 console.log(`Client Response: ${clientWithEncryption.read()}`)
-
+console.log("--------------------------------------")
 // you can create a decorator with a decorator as well
 // here, we can create a decorator that encrypts and compresses the data
 const encryptAndCompressDataSource = new EncryptionDecorator(compressionDataSource)
